@@ -1,6 +1,6 @@
 from module import run_game
 
-INTRO = '''РАССЧИТАЙ И ПОБЕДИ!
+intro = '''РАССЧИТАЙ И ПОБЕДИ!
 Загрузка...
 
 Твоя цель — за 5 ходов набрать такое количество очков урона противнику,
@@ -16,11 +16,13 @@ hard — урон от 30 до 40 очков.
 ВПЕРЁД К ПОБЕДЕ!!!
 '''
 
+
 def main():
-    print(INTRO)
+    print(intro)
     replay = True
     while replay:
         replay = run_game()
+
 
 if __name__ == '__main__':
     main()
